@@ -165,7 +165,7 @@ export default function App() {
         </div>
       </div>
 
-      <div className="max-w-[860px] mx-auto p-8 px-5">
+      <div className="max-w-[1100px] mx-auto p-8 px-5">
 
         {/* HOME — Task Selection */}
         {page === "home" && (

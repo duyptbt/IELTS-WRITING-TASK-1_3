@@ -56,7 +56,7 @@ export function LineChartViz({ visual }: { visual: any }) {
         ))}
       </div>
       <div className="overflow-x-auto">
-        <svg width={W} height={H} className="block max-w-full">
+        <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto block">
           {[0, 0.25, 0.5, 0.75, 1].map((t, i) => {
             const y = pad.t + t * iH;
             const val = Math.round(max - t * (max - min));
