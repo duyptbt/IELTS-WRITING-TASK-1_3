@@ -187,7 +187,8 @@ export default function App() {
                       ))}
                     </div>
                     <h3 className="text-[17px] text-slate-900 m-0 mb-1.5">{task.title}</h3>
-                    <p className="text-slate-500 text-[13px] leading-normal m-0">{task.description}</p>
+                    <p className="text-slate-600 text-[13px] leading-normal m-0 font-bold">{task.description}</p>
+                    <p className="text-slate-400 text-[11px] mt-1.5 italic">Summarise the information by selecting and reporting the main features, and make comparisons where relevant.</p>
                   </div>
                   <button className="bg-gradient-to-br from-indigo-600 to-violet-600 text-white border-none rounded-lg px-5 py-2.5 text-sm cursor-pointer font-serif" onClick={(e) => { e.stopPropagation(); startTask(task); }}>Start Task →</button>
                 </div>
@@ -217,7 +218,8 @@ export default function App() {
               </div>
             </div>
             <div className="bg-white border border-slate-200 rounded-xl p-6 mb-5">
-              <p className="text-slate-600 text-sm leading-relaxed mb-4">{selectedTask.description}</p>
+              <p className="text-slate-900 text-sm leading-relaxed mb-2 font-bold">{selectedTask.description}</p>
+              <p className="text-slate-500 text-[13px] italic mb-4">Summarise the information by selecting and reporting the main features, and make comparisons where relevant.</p>
               <div className="flex gap-4 flex-wrap">
                 {selectedTask.visuals.map((v: any, i: number) => renderVisual(v, i))}
               </div>
@@ -256,7 +258,8 @@ export default function App() {
 
             <div className="bg-white border border-slate-200 rounded-xl p-6 mb-5">
               <div className="text-[11px] text-slate-400 tracking-widest mb-3 uppercase">THE TASK</div>
-              <p className="text-slate-600 text-[13px] leading-relaxed mb-3.5">{selectedTask.description}</p>
+              <p className="text-slate-900 text-[13px] leading-relaxed mb-2 font-bold">{selectedTask.description}</p>
+              <p className="text-slate-500 text-[12px] italic mb-3.5">Summarise the information by selecting and reporting the main features, and make comparisons where relevant.</p>
               <div className="flex gap-4 flex-wrap">
                 {selectedTask.visuals.map((v: any, i: number) => renderVisual(v, i))}
               </div>
